@@ -9,9 +9,13 @@
   },
   "dependencies": {
     "babel-plugin-import": "^1.11.0",
+    "components": "^0.1.0",
     "core-js": "^2.6.5",
+    "lib-flexible": "^0.3.2",
     "postcss-px2rem": "^0.3.0",
     "terser-webpack-plugin": "^1.2.3",
+    "tiptap": "^1.14.0",
+    "tiptap-extensions": "^1.14.0",
     "vant": "^1.6.13",
     "vue": "^2.6.6",
     "vue-router": "^3.0.2"
@@ -31,10 +35,9 @@
       "node": true
     },
     "extends": [
-      "plugin:vue/essential",
+      "plugin:vue/strongly-recommended",
       "eslint:recommended"
     ],
-    "rules": {},
     "parserOptions": {
       "parser": "babel-eslint"
     }

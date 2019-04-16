@@ -1,18 +1,17 @@
 <template>
   <div id="app">
     <router-view/>
-    <Navigate/>
+    <Navigate />
   </div>
 </template>
 
 <script>
 import Navigate from './components/Navigate.vue'
-
 export default {
   name: 'app',
-  components: {
-      Navigate
-  }
+    components: {
+        Navigate
+    }
 }
 </script>
 
