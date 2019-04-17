@@ -1,15 +1,14 @@
 <template>
-  <div>
-    11115
+  <div class="hn-bg-ffffff">
+    <div class="hn-fs-16">123哈哈陈</div>
   </div>
 </template>
 
 <script>
   export default {
-    name: "index"
+    name: "Index"
   }
 </script>
 
 <style scoped>
-
 </style>

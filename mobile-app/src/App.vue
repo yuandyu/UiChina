@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <router-view/>
+    <router-view />
     <Navigate />
   </div>
 </template>
@@ -8,21 +8,21 @@
 <script>
 import Navigate from './components/Navigate.vue'
 export default {
-  name: 'app',
-    components: {
-        Navigate
-    }
+  name: 'App',
+  components: {
+      Navigate
+  }
 }
 </script>
 
 
 <style>
+  img{
+    display: block;
+  }
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: PingFangSC-Regular, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
