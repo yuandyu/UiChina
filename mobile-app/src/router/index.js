@@ -3,6 +3,8 @@ import Router from 'vue-router';
 const Index = resolve => require(['../views/index'], resolve);
 const Find = resolve => require(['../views/find/Find'], resolve);
 const FindIndex = resolve => require(['../views/find/FindIndex'], resolve);
+const ExperienceIndex = resolve => require(['../views/experience/Index'], resolve);
+const Experience = resolve => require(['../views/experience/Experience'], resolve);
 
 Vue.use(Router);
 export default new Router({
@@ -26,6 +28,21 @@ export default new Router({
         path: '/',
         component: FindIndex,
         name: 'FindIndex',
+        meta: {
+          title: '发现'
+        }
+      }]
+    }, {
+      path: '/experience',
+      component: ExperienceIndex,
+      name: 'ExperienceIndex',
+      meta: {
+        title: '经验'
+      },
+      children: [{
+        path: '/',
+        component: Experience,
+        name: 'Experience',
         meta: {
           title: '发现'
         }
