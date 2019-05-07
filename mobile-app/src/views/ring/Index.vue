@@ -2,10 +2,8 @@
   <div>
     <div class="van-hairline--bottom">
       <van-row type="flex" justify="space-between" align="center" class="hn-find-top">
-        <van-col class="hn-find-title">经验</van-col>
-        <van-col>
-          <van-icon name="search" class="hn-find-search" />
-        </van-col>
+        <van-col class="hn-find-title">U圈</van-col>
+        <van-col class="hn-find-search">互动</van-col>
       </van-row>
     </div>
     <router-view />
@@ -13,13 +11,12 @@
 </template>
 
 <script>
-  import { Row, Col, Icon } from 'vant';
+  import { Row, Col } from 'vant';
   export default {
     name: "ExperienceIndex",
     components: {
       'van-row': Row,
-      'van-col': Col,
-      'van-icon': Icon
+      'van-col': Col
     }
   }
 </script>
@@ -32,7 +29,7 @@
       color: #000;
     }
     .hn-find-search{
-      font-size: 22px;
+      font-size: 14px;
     }
   }
 
