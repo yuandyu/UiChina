@@ -19,7 +19,7 @@
   /* eslint-disable no-console */
 
   import { Tabs, Tab, Icon } from 'vant';
-  import { HnFindNav, HnFindScroll, HnFindActivity, HnFindSort } from '../../components/index'
+  import { HnFindNav, HnFindScroll, HnFindActivity, HnFindSort } from '../../components/index';
   export default {
     name: "FindIndex",
     components: {
