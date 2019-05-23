@@ -98,6 +98,7 @@
 <style scoped lang="scss">
   .hn-user-tabs{
     padding: 10px;
+    border-bottom: 3px solid #f0f0f0;
     .hn-user-title{
       padding-top: 5px;
     }

@@ -34,12 +34,12 @@
     </div>
     <div>
       <van-cell-group>
-        <van-cell title="我的勋章" is-link value="24" />
-        <van-cell title="我的作品" is-link value="24" />
-        <van-cell title="我的收藏" is-link value="24" />
-        <van-cell title="我的简历" is-link value="24" />
-        <van-cell title="主页留言" is-link value="24" />
-        <van-cell title="设置" is-link value="24" />
+        <van-cell title="我的勋章" icon="medel-o" is-link value="24" />
+        <van-cell title="我的作品" icon="label-o" is-link value="24" />
+        <van-cell title="我的收藏" icon="bookmark-o" is-link value="24" />
+        <van-cell title="我的简历" icon="user-o" is-link value="24" />
+        <van-cell title="主页留言" icon="chat-o" is-link value="24" />
+        <van-cell title="设置" icon="setting-o" is-link value="24" />
       </van-cell-group>
     </div>
   </div>

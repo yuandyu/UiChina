@@ -22,12 +22,9 @@
       'van-tabbar': Tabbar,
       'van-tabbar-item': TabbarItem,
     },
-    props: {
-      active: {
-        type: Number,
-        default: 0
-      }
-    }
+    data: () => ({
+      active: 0
+    })
   }
 </script>
 

@@ -5,7 +5,7 @@
         <div>
           <van-row class="hn-ring-box" type="flex" v-for="n in 5" :key="n">
             <van-col class="hn-ring-header">
-              <img src="//img.ui.cn/data/vip/1556420562.png" alt="">
+              <img src="http://thirdwx.qlogo.cn/mmopen/Q3auHgzwzM7x9PSxVbg1fCu6JMsHNBeAFK6aLyxAl0YOMYZKTFV4FJ0294Al1AnEKGcgER0h43xu4RmM7zIfbzBn9F34hKSckN0zuTYxKLk/132" alt="">
             </van-col>
             <van-col class="hn-ring-right hn-c-666">
               <van-row type="flex" justify="space-between">
@@ -15,7 +15,7 @@
               <div class="hn-ring-synopsis">这不仅仅是一篇经验，而是前辈用日积月累得工作心得，用笔记用脑想，最重要得是要走心。还有我是占位符不是简介</div>
               <van-row type="flex" class="hn-ring-img">
                 <van-col>
-                  <img src="//img.ui.cn/data/vip/1556420562.png" alt="">
+                  <img src="http://thirdwx.qlogo.cn/mmopen/Q3auHgzwzM7x9PSxVbg1fCu6JMsHNBeAFK6aLyxAl0YOMYZKTFV4FJ0294Al1AnEKGcgER0h43xu4RmM7zIfbzBn9F34hKSckN0zuTYxKLk/132" alt="">
                 </van-col>
               </van-row>
               <van-row type="flex" justify="space-between" class="hn-ring-zan">

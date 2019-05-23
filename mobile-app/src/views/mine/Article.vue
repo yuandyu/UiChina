@@ -57,17 +57,20 @@
     <hn-user-scroll />
     <div>
       <van-cell title="24条评论" is-link />
-      <van-row class="hn-article-comment">
+      <van-row class="hn-article-comment" type="flex" align="center">
         <van-col>
           <img src="http://thirdwx.qlogo.cn/mmopen/Q3auHgzwzM7x9PSxVbg1fCu6JMsHNBeAFK6aLyxAl0YOMYZKTFV4FJ0294Al1AnEKGcgER0h43xu4RmM7zIfbzBn9F34hKSckN0zuTYxKLk/132" alt="">
         </van-col>
-        <van-col>
-          <van-row type="flex" justify="space-between">
-            <van-col></van-col>
-            <van-col></van-col>
+        <van-col class="hn-article-right">
+          <van-row type="flex" justify="space-between" align="center">
+            <van-col class="hn-c-4d4d4d hn-fs-14">Hn.</van-col>
+            <van-col class="hn-article-like hn-c-808080">
+              <van-icon name="like-o" />&nbsp;
+              <span>85</span>
+            </van-col>
           </van-row>
-          <div></div>
-          <div></div>
+          <div class="hn-c-999 hn-fs-12">您的这个作品真的很多棒</div>
+          <div class="hn-c-999 hn-fs-10">26分钟前</div>
         </van-col>
       </van-row>
     </div>
@@ -97,6 +100,14 @@
       width: 40px;
       height: 40px;
       border-radius: 50%;
+    }
+    .hn-article-right{
+      width: 100%;
+      padding-left: 10px;
+      .hn-article-like{
+        display: flex;
+        align-items: center;
+      }
     }
   }
   .hn-article-nav{

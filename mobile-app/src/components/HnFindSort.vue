@@ -70,9 +70,9 @@
       }
     }
     .hn-sort-cross{
-      font-size: 30px;
+      font-size: 18px;
       padding: 5px 15px;
-      color: #b3b3b3;
+      color: #666;
     }
     .hn-sort-edit{
       position: absolute;
