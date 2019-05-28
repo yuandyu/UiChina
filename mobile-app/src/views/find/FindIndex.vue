@@ -20,7 +20,7 @@
 
   import { Tabs, Tab, Icon } from 'vant';
   import { HnFindNav, HnFindScroll, HnFindActivity, HnFindSort } from '../../components/index';
-  import { GetFind } from '../../api/find';
+
   export default {
     name: "FindIndex",
     components: {
@@ -60,7 +60,6 @@
     },
     created() {
       window.addEventListener('scroll', this.handleScroll);
-      this.GetFindAsync();
     },
     methods: {
       handleScroll () {
@@ -69,11 +68,6 @@
       },
       cross() {
         this.show = false;
-      },
-      async GetFindAsync() {
-        await GetFind(1).then((res) => {
-          console.log(res)
-        });
       }
     }
   }

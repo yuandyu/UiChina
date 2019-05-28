@@ -1,6 +1,6 @@
 <template>
   <div class="hn-bg-ffffff">
-    <div class="hn-fs-16">123哈哈陈</div>
+    <div class="hn-fs-16"></div>
   </div>
 </template>
 

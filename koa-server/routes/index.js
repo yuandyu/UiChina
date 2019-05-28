@@ -20,6 +20,6 @@ router.get('/json', async (ctx, next) => {
 router.post('/article/create',ArtileController.create);
 router.get('/article/:id',ArtileController.detail);
 router.post('/find/create',FindController.create);
-router.get('/find/:id',FindController.detail);
+router.get('/find',FindController.detail);
 
 module.exports = router;

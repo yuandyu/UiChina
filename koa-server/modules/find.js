@@ -28,12 +28,8 @@ class FindModel {
    * @param id 文章ID
    * @returns {Promise<Model>}
    */
-  static async getFindDetail(id){
-    return await Find.findOne({
-      where:{
-        id
-      }
-    });
+  static async getFindDetail(){
+    return await Find.findAll();
   }
 }
 

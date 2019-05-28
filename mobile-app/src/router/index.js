@@ -1,6 +1,6 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-const Index = resolve => require(['../views/index'], resolve);
+// const Index = resolve => require(['../views/index'], resolve);
 
 // 发现
 const Find = resolve => require(['../views/find/Find'], resolve);
@@ -30,13 +30,6 @@ export default new Router({
   routes: [
     {
       path: '/',
-      component: Index,
-      name: 'Index',
-      meta: {
-        title: '首页'
-      }
-    }, {
-      path: '/find',
       component: Find,
       name: 'Find',
       meta: {

@@ -9,7 +9,6 @@ const service = axios.create({
 
 // request interceptor
 service.interceptors.request.use(config => {
-  console.log(config, 'config')
   if (config.method === 'get') { // 给get请求添加时间戳
     if (config.url.indexOf('?') > 0) {
       config.url = config.url + '&_t=' + Date.now();
@@ -27,10 +26,8 @@ service.interceptors.request.use(config => {
 });
 
 service.interceptors.response.use(response => {
-  console.log(response)
   return response.data;
 }, error => {
-  console.log(error)
   Toast.clear();
   return Promise.reject(error);
 });
