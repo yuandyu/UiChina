@@ -1,6 +1,7 @@
 const router = require('koa-router')()
 const ArtileController = require('../controllers/article');
 const FindController = require('../controllers/find');
+const ActivityController = require('../controllers/activity');
 router.get('/', async (ctx, next) => {
   await ctx.render('index', {
     title: 'Hello Koa 2!'
@@ -21,5 +22,6 @@ router.post('/article/create',ArtileController.create);
 router.get('/article/:id',ArtileController.detail);
 router.post('/find/create',FindController.create);
 router.get('/find',FindController.detail);
+router.get('/getActivity',ActivityController.activity);
 
 module.exports = router;

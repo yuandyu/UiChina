@@ -10,3 +10,10 @@ export function GetFind() {
     method: 'GET',
   });
 }
+
+export function GetActivity() {
+  return request({
+    url: api + `getActivity`,
+    method: 'GET',
+  });
+}

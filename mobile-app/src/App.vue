@@ -6,11 +6,13 @@
 </template>
 
 <script>
-import Navigate from './components/Navigate.vue'
+  /* eslint-disable no-console */
+
+  import Navigate from './components/Navigate.vue'
 export default {
   name: 'App',
   components: {
-      Navigate
+    Navigate
   }
 }
 </script>
@@ -20,9 +22,12 @@ export default {
   img{
     display: block;
   }
-#app {
-  font-family: PingFangSC-Regular, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+  #app {
+    font-family: PingFangSC-Regular, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  body{
+    background-color: #fafafa;
+  }
 </style>

@@ -6,8 +6,8 @@
           {{tab.name}}
         </div>
         <hn-find-nav />
-        <hn-find-scroll />
-        <hn-find-activity />
+        <hn-find-scroll :Activity="Activity" />
+        <hn-find-activity :Activity="Activity" />
       </van-tab>
       <div class="hn-find-tabs-icon" @click="show = true" v-bind:style="{position: position ? 'absolute' : 'fixed'}"><van-icon name="close" /></div>
     </van-tabs>
@@ -20,7 +20,7 @@
 
   import { Tabs, Tab, Icon } from 'vant';
   import { HnFindNav, HnFindScroll, HnFindActivity, HnFindSort } from '../../components/index';
-
+  import { GetActivity } from '../../api/find';
   export default {
     name: "FindIndex",
     components: {
@@ -45,6 +45,7 @@
           name: '佳作分享'
         }],
         show: false,
+        Activity: [],
         scrollY: 0, // 滚动距离
         position: true // true => absolute, false => fixed
       }
@@ -60,6 +61,7 @@
     },
     created() {
       window.addEventListener('scroll', this.handleScroll);
+      this.GetActivityAsync();
     },
     methods: {
       handleScroll () {
@@ -68,6 +70,12 @@
       },
       cross() {
         this.show = false;
+      },
+      async GetActivityAsync() {
+        await GetActivity().then((res) => {
+          console.log(res, 'Activity');
+          this.Activity = res.data;
+        });
       }
     }
   }

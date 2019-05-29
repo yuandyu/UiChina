@@ -2,8 +2,8 @@
 <template>
   <div>
     <div style="height: 50px;">&nbsp;</div>
-    <van-tabbar v-model="active">
-      <van-tabbar-item icon="home-o" to="/find">发现</van-tabbar-item>
+    <van-tabbar v-model="active" v-bind:style="{width: width + 'px'}" style="margin: 0 auto; left: auto;">
+      <van-tabbar-item icon="home-o" to="/">发现</van-tabbar-item>
       <van-tabbar-item icon="search" to="/experience">经验</van-tabbar-item>
       <van-tabbar-item icon="friends-o" to="/ring">U圈</van-tabbar-item>
       <van-tabbar-item icon="setting-o" to="/news">消息</van-tabbar-item>
@@ -23,8 +23,12 @@
       'van-tabbar-item': TabbarItem,
     },
     data: () => ({
-      active: 0
-    })
+      active: 0,
+      width: ''
+    }),
+    created() {
+      this.width = this.$store.getters.getWidth;
+    }
   }
 </script>
 

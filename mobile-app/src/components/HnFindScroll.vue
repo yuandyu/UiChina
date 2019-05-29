@@ -2,10 +2,10 @@
   <div>
     <div class="hn-find-scorll hn-bg-f0f0f0">
       <van-row type="flex">
-        <van-col class="hn-find-nav" v-for="n in 5" :key="n">
-          <img src="../assets/1507875512.jpeg" alt="">
+        <van-col class="hn-find-nav" v-for="(activity, index) in Activity" :key="index">
+          <img :src="activity.image" alt="">
           <div class="hn-find-title">
-            <div>2018体验调查2018体验调查2018体验2018体验调查2018体验调查2018体验调查调查</div>
+            <div>{{activity.title}}</div>
           </div>
         </van-col>
       </van-row>
@@ -14,12 +14,22 @@
 </template>
 
 <script>
+  /* eslint-disable no-console */
+
   import { Row, Col } from 'vant';
   export default {
     name: "HnFindScroll",
     components: {
       'van-row': Row,
       'van-col': Col
+    },
+    props: {
+      Activity: {
+        type: Array,
+        default(){
+          return [];
+        }
+      }
     }
   }
 </script>

@@ -45,6 +45,7 @@ class findController {
    * @returns {Promise.<void>}
    */
   static async detail(ctx){
+    console.log(ctx.params.id);
     let id = ctx.params.id;
     try{
       // 查询文章详情模型
